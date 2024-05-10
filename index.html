@@ -39,10 +39,12 @@
 
     <div id="termékek">
     </div>
-    <p id="termekszam" style="font-size:30px;color:black;">20</p>
+    <p id="termekszam" style="font-size:30px;color:black;">0</p>
+    <input type="range" id="range" min="3" max="100" oninput="addtermék(this.value)" style="width:250px;" value="13">
 <script>
 window.onload = addtermék(13)
 function addtermék(db) {
+    document.getElementById('termékek').innerHTML = ''
     for (n=0;n<db;n++) {
     document.getElementById('termékek').innerHTML += '<div class="termék"><img class="term_kép" src="képek/termékek/sapka.png" alt="product image" style="border-radius:15px 15px 0 0;"><div class="term_név"><b>bajuszbogre</b></div><div class="leírás">Leírás</div><div class="buttons"><button class="cart"><img class="cart_img" src="képek/shopping_cart.jpg" alt=""></button><button onclick="favorite()" class="fav"><img class="star" src="képek/rainbow_star_border.png" alt="fav"></button></div></div>'
         document.getElementById('termekszam').innerHTML = `${db}db termék található itt.`
