@@ -40,11 +40,14 @@
     <div id="termékek">
     </div>
 <script>
-window.onload = addtermék(6)
+window.onload = addtermék(200)
 function addtermék(db) {
     for (n=0;n<db;n++) {
     document.getElementById('termékek').innerHTML += '<div class="termék"><img class="term_kép" src="képek/termékek/sapka.png" alt="product image" style="border-radius:15px 15px 0 0;"><div class="term_név"><b>bajuszbogre</b></div><div class="leírás">Leírás</div><div class="buttons"><button class="cart"><img class="cart_img" src="képek/shopping_cart.jpg" alt=""></button><button onclick="favorite()" class="fav"><img class="star" src="képek/rainbow_star_border.png" alt="fav"></button></div></div>'
     }}
+function favorite() {
+    window.alert('kurva anyád')
+}
 </script>
 </body>
 </html>
