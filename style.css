@@ -35,6 +35,6 @@ nav a {
     font-size: 22px;
 }
 
-nav a:hover {
-    background-color: #fb00ff;
+#nav a:hover {
+    color: #fb00ff !important;
 }
